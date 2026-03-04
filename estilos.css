@@ -6,7 +6,14 @@
     
 }
 
-.bannerp{
+/* eliminar márgenes/padding globales que pueden crear huecos */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerp{ 
     height: 400px; 
     width: 70%;
     padding: 1rem;
@@ -23,9 +30,9 @@
 .encabezado { 
     background: #2c7004;
     border-bottom: 1px solid #e6e6e6;
-    width: 100%;            /* ocupa todo el ancho del viewport */
+    width: 100%;               /* ocupa todo el ancho del viewport */
     box-sizing: border-box; /* para que el padding no altere el ancho */
-    padding: 0.5rem 0;      /* espacio vertical dentro del encabezado */
+    /* padding: 0;              /* ninguna separación arriba/abajo */
 }
 
 /* el contenedor interno limita el contenido y añade margen automático */
@@ -35,7 +42,7 @@
     justify-content: space-between;
     max-width: var(--max-width);
     margin: 0 auto;        /* centra el contenido, no el fondo */
-    padding: 0 1rem;       /* espacio lateral para enlaces */
+    padding: 1rem 1rem;  /* vertical y lateral dentro del bloque */
 }
 
 .logo{
@@ -46,6 +53,7 @@
     margin-left:1rem; /* espacio entre enlaces */
     color:var(--secondary);
     text-decoration: none; /* elimina subrayado */
+    padding: 0; /* aumentar área clicable vertical sin cambiar ancho */
 }
 .descripcion{
     background-image: linear-gradient(90deg, rgba(43,138,107,0.06) 0%, rgba(240,165,0,0.03));
