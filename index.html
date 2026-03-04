@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MerkaT</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <header class = "encabezado"> <!-- Encabezado del sitio -->
+       <div class="header-container">  
+            <a class="logo" href="index.html">MerkaT</a>
+            <nav class="menu-navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                
+            </nav>
+       </div>
+
+    </header>
     
+    <!-- sección principal del sitio -->
+    <main>
+        <!-- descripción del mini mercado MerkaT -->
+        <section class="descripcion">
+            <div class="descripcion-container">
+                <div class="descripcion-texto">
+                    <h1>Bienvenido a MerkaT</h1>
+                    <p>Bienvenido a MerkaT, tu mini mercado de confianza. Aquí podrás comprar arroz, azúcar y café al mejor precio.</p>
+                </div>
+                <!-- agregamos la imagen dentro del contenedor para que forme parte de la grilla -->
+                <div class="descripcion-imagen" aria-hidden="true"></div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- pie de página -->
+    <footer>
+        <p>Contacto MerkaT: info@merkat.com - Tel: 123-456-7890</p>
+    </footer>
+
+    <!-- enlazamos el script al final para que el DOM ya esté cargado -->
+    <script src="script.js"></script>           
 </body>
 </html>

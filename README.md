@@ -1,2 +1,7 @@
 # Tallertienda-diseno-desarrollo
-taller 1 desarrollo web tienda
+taller 1 desarrollo web tienda  
+
+
+
+
+
